@@ -46,7 +46,7 @@ subroutine define_RWG( )
         end if
     end do
     
-    ! construct the map from triangle to boundary
+    ! map the triangle to boundary
     allocate( TriaToBound(2,TriaNum) )
     allocate( LocToGlob( newBound ) )
     TriaToBound(:,:) = 0
